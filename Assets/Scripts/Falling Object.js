@@ -1,8 +1,10 @@
 ﻿#pragma strict
 
 var explosion:GameObject;
-var audioClips : AudioClip[];
+var audioClips:AudioClip[];
+var playerToHurt:GameObject;
 var speed:float;
+
 function Start () {
 
 }
@@ -14,6 +16,11 @@ function Update(){
 		audio.PlayOneShot(audioClips[Random.Range(0,audioClips.length)]);
 		Instantiate(explosion, transform.position, Quaternion.identity);
 		Respawn();
+		if (playerToHurt){
+			var script:CharacterScript;
+			script = playerToHurt.GetComponent(CharacterScript);
+			script.health -= 20;
+		}
 	}
 }
 

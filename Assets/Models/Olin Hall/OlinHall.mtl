@@ -1,0 +1,199 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl Derrick_Shoes
+Ka 0.000000 0.000000 0.000000
+Kd 0.400000 0.278431 0.239216
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_Shirt
+Ka 0.000000 0.000000 0.000000
+Kd 0.478431 0.478431 0.600000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_Hair
+Ka 0.000000 0.000000 0.000000
+Kd 0.337255 0.298039 0.278431
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_Pager
+Ka 0.000000 0.000000 0.000000
+Kd 0.137255 0.137255 0.137255
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_Sweater
+Ka 0.000000 0.000000 0.000000
+Kd 0.556863 0.556863 0.556863
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_T_shirt
+Ka 0.000000 0.000000 0.000000
+Kd 0.886275 0.886275 0.886275
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick_Pants
+Ka 0.000000 0.000000 0.000000
+Kd 0.600000 0.537255 0.478431
+Ks 0.330000 0.330000 0.330000
+
+newmtl Derrick
+Ka 0.000000 0.000000 0.000000
+Kd 0.823529 0.705882 0.549020
+Ks 0.330000 0.330000 0.330000
+
+newmtl Google_Earth_Snapshot
+Ka 0.000000 0.000000 0.000000
+Kd 0.450980 0.478431 0.462745
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Google_Earth_Snapshot.jpg
+
+newmtl Building12_roof
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof.jpg
+
+newmtl Building_12_3_1_Side_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.701961 0.698039 0.698039
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_1_Side_2.jpg
+
+newmtl Building_12_3_1_Side_2_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.549020 0.498039 0.474510
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_1_Side_2_1.jpg
+
+newmtl Building_12_3_3_Side_2_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.698039 0.725490 0.733333
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_3_Side_2_1.jpg
+
+newmtl Building_12_1_2_Front
+Ka 0.000000 0.000000 0.000000
+Kd 0.701961 0.682353 0.678431
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front.jpg
+
+newmtl Building12_roof1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof1_.jpg
+
+newmtl Building12_roof2_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof2_.jpg
+
+newmtl Building12_roof3_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof3_.jpg
+
+newmtl Building_12_3_1_Side_2_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.701961 0.698039 0.698039
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_1_Side_2_1_.jpg
+
+newmtl Building_12_1_1_Side_3_and_Front
+Ka 0.000000 0.000000 0.000000
+Kd 0.764706 0.737255 0.721569
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_1_Side_3_and_Front.jpg
+
+newmtl Building_12_1_2_Front_4
+Ka 0.000000 0.000000 0.000000
+Kd 0.725490 0.725490 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front_4.jpg
+
+newmtl Building_12_3_3_Side_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.694118 0.690196 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_3_Side_2.jpg
+
+newmtl Building_12_3_3_Side_2_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.694118 0.690196 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_3_3_Side_2_1_.jpg
+
+newmtl Building_12_1_1_Side_3_and_Front1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.764706 0.737255 0.721569
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_1_Side_3_and_Front1_.jpg
+
+newmtl Building_12_1_2_Front_5
+Ka 0.000000 0.000000 0.000000
+Kd 0.725490 0.725490 0.690196
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front_5.jpg
+
+newmtl Building_12_1_2_Front_2
+Ka 0.000000 0.000000 0.000000
+Kd 0.631373 0.513725 0.466667
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front_2.jpg
+
+newmtl Building12_roof4_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof4_.jpg
+
+newmtl Building12_roof5_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof5_.jpg
+
+newmtl Building12_roof6_
+Ka 0.000000 0.000000 0.000000
+Kd 0.415686 0.450980 0.447059
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building12_roof6_.jpg
+
+newmtl Building_12_1_2_Front_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.725490 0.725490 0.686275
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front_1.jpg
+
+newmtl FrontColor
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.330000 0.330000 0.330000
+
+newmtl Building_12_1_2_Front_6
+Ka 0.000000 0.000000 0.000000
+Kd 0.494118 0.407843 0.372549
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_1_2_Front_6.jpg
+
+newmtl Building_12_2_3_Side_1_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.533333 0.458824 0.435294
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_2_3_Side_1_1.jpg
+
+newmtl Building_12_2_3_Side_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.745098 0.733333 0.729412
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_2_3_Side_1.jpg
+
+newmtl Building_12_2_3_Side_1_1_
+Ka 0.000000 0.000000 0.000000
+Kd 0.745098 0.733333 0.729412
+Ks 0.330000 0.330000 0.330000
+map_Kd OlinHall/Building_12_2_3_Side_1_1_.jpg
+
