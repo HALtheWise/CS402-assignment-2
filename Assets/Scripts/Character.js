@@ -12,7 +12,7 @@ function Start()
 function Update()
 {
 	var halfW:float = Screen.width / 2;
-	transform.position.x = (Input.mousePosition.x)/20;
+	transform.position.x = (Input.mousePosition.x)/Screen.width * 150 - 50;
 	
 	if(lastX != transform.position.x){ //Mouse is moving
 		
