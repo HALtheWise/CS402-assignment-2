@@ -2,6 +2,7 @@
 
 var lastX:float;
 var isMoving:boolean = false;
+var explosion:GameObject;
 
 function Start()
 {
@@ -35,7 +36,7 @@ function OnCollisionEnter(col : Collision)
 {
 	if(col.gameObject.tag == "bomb")
 	{
-		// Hit by a bomb!
+		Instantiate(explosion, col.gameObject.transform.position, Quaternion.identity);
 	}
 	else if (col.gameObject.tag == "stein")
 	{
