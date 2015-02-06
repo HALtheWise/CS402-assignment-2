@@ -18,6 +18,8 @@ function Start()
 	numCatches = 0;
 	hasLost = false;
 	animation.Stop(); // prevent default animation
+	bomb.transform.position.y = 100;
+	mug.transform.position.y = 100;
 }
 
 function Update()
@@ -45,6 +47,32 @@ function Update()
 	lastX = transform.position.x;
 }
 
+function OnGUI(){
+	drawPieClock();
+	if (hasLost){
+		
+		var buttonW:int = 100; // button width
+		var buttonH:int = 50; // button height
+		var halfScreenW:float = Screen.width/2; 
+		var halfButtonW:float = buttonW/2; 
+		
+		if(GUI.Button(Rect(halfScreenW-halfButtonW, Screen.height*.5,
+				buttonW, buttonH), "Play Again?"))
+		{
+			Start();
+		}
+		
+	}
+}
+
+var bomb:GameObject;
+var mug:GameObject;
+
+function Die(){
+	bomb.transform.position.y = 100000;
+	mug.transform.position.y = 100000;
+}
+
 function updateDisplays(){
 	var str:String = "";
 	
@@ -61,6 +89,7 @@ function updateDisplays(){
 	if(health <= 0){
 		if(!hasLost) {
 			hasLost = true;
+			Die();
 			lastBest = bestScore;
 			if(numCatches > bestScore) {
 				bestScore = numCatches;
@@ -74,6 +103,7 @@ function OnCollisionEnter(col : Collision)
 	if(col.gameObject.tag == "bomb")
 	{
 		audio.PlayOneShot(explosionSound);
+		health -= 20;
 		Instantiate(explosion, col.gameObject.transform.position, Quaternion.identity);
 	}
 	else if (col.gameObject.tag == "stein")
@@ -85,21 +115,32 @@ function OnCollisionEnter(col : Collision)
 	col.gameObject.transform.position.x = Random.Range(0,60);
 }
 
+
+var rightSide:Texture2D;
+var leftSide:Texture2D;
+var back:Texture2D;
+var blocker:Texture2D;
+var shiny:Texture2D;
+var finished:Texture2D;
+
 function drawPieClock(){
-	var gap = 20
+
+	if (hasLost) return;
+
+	var gap = 20;
 	var w:int = back.width;
 	var h:int = back.height;
 	var clockRect:Rect = new Rect(0,0,w,h);
-	var visibleAngle:float = percent / 100 * 360.0;
+	var visibleAngle:float = health / 100 * 360.0;
 	
 	var centerPoint:Vector2 = Vector2(w/2, h/2);
 	var startMatrix:Matrix4x4 = GUI.matrix;
 	
-	GUI.BeginGroup(new Rect(Screen.width - w - gap, 2*gap + clockBG.height, w, h));
+	GUI.BeginGroup(new Rect(Screen.width - w - gap, 200, w, h));
 		
 		GUI.DrawTexture(clockRect, back);
 		
-		if(percent < 50) //Clock is more than half way depleted
+		if(health < 50) //Clock is more than half way depleted
 		{
 			GUIUtility.RotateAroundPivot(-visibleAngle, centerPoint);
 			GUI.DrawTexture(clockRect, rightSide, ScaleMode.StretchToFill, true, 0);
@@ -112,7 +153,7 @@ function drawPieClock(){
 			GUI.DrawTexture(clockRect, leftSide);
 		}
 		
-		if (percent <= 0) GUI.DrawTexture(clockRect, finished);
+		if (health <= 0) GUI.DrawTexture(clockRect, finished);
 		GUI.DrawTexture(clockRect, shiny);
 		
 		
