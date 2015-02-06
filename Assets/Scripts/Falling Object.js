@@ -1,7 +1,8 @@
 ﻿#pragma strict
 
 var explosion:GameObject;
-var audioClips : AudioClip[];
+var audioClips:AudioClip[];
+var playerToHurt:GameObject;
 var speed:float;
 function Start () {
 

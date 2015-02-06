@@ -56,7 +56,7 @@ function OnGUI(){
 		var halfScreenW:float = Screen.width/2; 
 		var halfButtonW:float = buttonW/2; 
 		
-		if(GUI.Button(Rect(halfScreenW-halfButtonW, Screen.height*.5,
+		if(GUI.Button(Rect(halfScreenW-halfButtonW, Screen.height*.8,
 				buttonW, buttonH), "Play Again?"))
 		{
 			Start();
