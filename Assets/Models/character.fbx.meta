@@ -106,9 +106,9 @@ ModelImporter:
     7400000: stepLeft
     7400002: stepRight
     7400004: catch
-    7400006: idle
+    7400006: step
     7400008: step
-    7400010: Action
+    7400010: idle
     11100000: //RootNode
     13700000: Guy
   materials:
@@ -126,7 +126,379 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: step
+      takeName: Action
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/C_Foot.L
+        weight: 1
+      - path: Armature/C_Foot.L/C_Toe.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L/C_Toe.L.001.L
+        weight: 1
+      - path: Armature/C_Hip
+        weight: 1
+      - path: Armature/C_Hip/C_Spine
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L/C_Forearm.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L/C_Forearm.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck/C_Head
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L/C_Shin.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L/C_Shin.L.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L/Hand.L.001.L
+        weight: 1
+      - path: Armature/Elbow.L
+        weight: 1
+      - path: Armature/Elbow.L.001.R
+        weight: 1
+      - path: Armature/Foot.L
+        weight: 1
+      - path: Armature/Foot.L/Toe.L
+        weight: 1
+      - path: Armature/Foot.L.001.L
+        weight: 1
+      - path: Armature/Foot.L.001.L/Toe.L.001.L
+        weight: 1
+      - path: Armature/Guy
+        weight: 1
+      - path: Armature/Hip
+        weight: 1
+      - path: Armature/Hip/Spine
+        weight: 1
+      - path: Armature/Hip/Spine/Chest
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Armature/Knee.L
+        weight: 1
+      - path: Armature/Knee.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L/Hand.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L/Forearm.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L
+        weight: 1
+      - path: Armature/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L/Shin.L.001.L
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: Action
+      firstFrame: 22
+      lastFrame: 46
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/C_Foot.L
+        weight: 1
+      - path: Armature/C_Foot.L/C_Toe.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L/C_Toe.L.001.L
+        weight: 1
+      - path: Armature/C_Hip
+        weight: 1
+      - path: Armature/C_Hip/C_Spine
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L/C_Forearm.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L/C_Forearm.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck/C_Head
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L/C_Shin.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L/C_Shin.L.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L/Hand.L.001.L
+        weight: 1
+      - path: Armature/Elbow.L
+        weight: 1
+      - path: Armature/Elbow.L.001.R
+        weight: 1
+      - path: Armature/Foot.L
+        weight: 1
+      - path: Armature/Foot.L/Toe.L
+        weight: 1
+      - path: Armature/Foot.L.001.L
+        weight: 1
+      - path: Armature/Foot.L.001.L/Toe.L.001.L
+        weight: 1
+      - path: Armature/Guy
+        weight: 1
+      - path: Armature/Hip
+        weight: 1
+      - path: Armature/Hip/Spine
+        weight: 1
+      - path: Armature/Hip/Spine/Chest
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Armature/Knee.L
+        weight: 1
+      - path: Armature/Knee.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L/Hand.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L/Forearm.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L
+        weight: 1
+      - path: Armature/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L/Shin.L.001.L
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: catch
+      takeName: Action
+      firstFrame: 12
+      lastFrame: 20
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/C_Foot.L
+        weight: 1
+      - path: Armature/C_Foot.L/C_Toe.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L
+        weight: 1
+      - path: Armature/C_Foot.L.001.L/C_Toe.L.001.L
+        weight: 1
+      - path: Armature/C_Hip
+        weight: 1
+      - path: Armature/C_Hip/C_Spine
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder/C_Bicep.L/C_Forearm.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_L_Shoulder.001.L/C_Bicep.L.001.L/C_Forearm.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck
+        weight: 1
+      - path: Armature/C_Hip/C_Spine/C_Chest/C_Neck/C_Head
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L/C_Shin.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L
+        weight: 1
+      - path: Armature/C_Hip/C_Thigh.L.001.L/C_Shin.L.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L
+        weight: 1
+      - path: Armature/C_L_Hand_IK.001.L/Hand.L.001.L
+        weight: 1
+      - path: Armature/Elbow.L
+        weight: 1
+      - path: Armature/Elbow.L.001.R
+        weight: 1
+      - path: Armature/Foot.L
+        weight: 1
+      - path: Armature/Foot.L/Toe.L
+        weight: 1
+      - path: Armature/Foot.L.001.L
+        weight: 1
+      - path: Armature/Foot.L.001.L/Toe.L.001.L
+        weight: 1
+      - path: Armature/Guy
+        weight: 1
+      - path: Armature/Hip
+        weight: 1
+      - path: Armature/Hip/Spine
+        weight: 1
+      - path: Armature/Hip/Spine/Chest
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck
+        weight: 1
+      - path: Armature/Hip/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Armature/Knee.L
+        weight: 1
+      - path: Armature/Knee.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L
+        weight: 1
+      - path: Armature/L_Shoulder/Bicep.L/Forearm.L/Hand.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L
+        weight: 1
+      - path: Armature/L_Shoulder.001.L/Bicep.L.001.L/Forearm.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L
+        weight: 1
+      - path: Armature/Thigh.L/Shin.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L
+        weight: 1
+      - path: Armature/Thigh.L.001.L/Shin.L.001.L
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
