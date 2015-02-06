@@ -24,4 +24,5 @@ function Update()
 			animation.Play("idle");
 		}		
 	}
+	lastX = transform.position.x;
 }
