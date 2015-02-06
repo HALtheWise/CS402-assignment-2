@@ -16,14 +16,14 @@ function Update()
 		
 		if (!isMoving){
 			isMoving = true;
-			if (!if(!animation.IsPlaying("catch")){
+			if (!animation.IsPlaying("catch")){
 				animation.Play("step");
 			}
 		}
 	}else{
 		if (isMoving){
 			isMoving = false;
-			if (!if(!animation.IsPlaying("catch")){
+			if (!animation.IsPlaying("catch")){
 				animation.Play("idle");
 			}
 		}		
