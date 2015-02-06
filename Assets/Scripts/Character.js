@@ -7,13 +7,14 @@ var explosionSound:AudioClip;
 
 var numCatches:int;
 var bestScore:int = 0;
-var health:int = 100;
+var health:float;
 var lastBest:int = 0;
 var hasLost:boolean = false;
 var catchCounter:GUIText;
 
 function Start()
 {
+	health = 100;
 	numCatches = 0;
 	hasLost = false;
 	animation.Stop(); // prevent default animation
@@ -82,4 +83,38 @@ function OnCollisionEnter(col : Collision)
 	}
 	col.gameObject.transform.position.y = 50;
 	col.gameObject.transform.position.x = Random.Range(0,60);
+}
+
+function drawPieClock(){
+	var gap = 20
+	var w:int = back.width;
+	var h:int = back.height;
+	var clockRect:Rect = new Rect(0,0,w,h);
+	var visibleAngle:float = percent / 100 * 360.0;
+	
+	var centerPoint:Vector2 = Vector2(w/2, h/2);
+	var startMatrix:Matrix4x4 = GUI.matrix;
+	
+	GUI.BeginGroup(new Rect(Screen.width - w - gap, 2*gap + clockBG.height, w, h));
+		
+		GUI.DrawTexture(clockRect, back);
+		
+		if(percent < 50) //Clock is more than half way depleted
+		{
+			GUIUtility.RotateAroundPivot(-visibleAngle, centerPoint);
+			GUI.DrawTexture(clockRect, rightSide, ScaleMode.StretchToFill, true, 0);
+			GUI.matrix = startMatrix;
+			GUI.DrawTexture(clockRect, blocker);
+		} else {
+			GUIUtility.RotateAroundPivot(-visibleAngle, centerPoint);
+			GUI.DrawTexture(clockRect, rightSide, ScaleMode.StretchToFill, true, 0);
+			GUI.matrix = startMatrix;
+			GUI.DrawTexture(clockRect, leftSide);
+		}
+		
+		if (percent <= 0) GUI.DrawTexture(clockRect, finished);
+		GUI.DrawTexture(clockRect, shiny);
+		
+		
+	GUI.EndGroup();	
 }
