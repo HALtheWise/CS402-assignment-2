@@ -1,12 +1,13 @@
 ﻿#pragma strict
 
 var explosion:GameObject;
+var speed:float;
 function Start () {
 
 }
 
 function Update(){
-	transform.position.y -= 50 * Time.deltaTime;
+	transform.position.y -= speed * Time.deltaTime;
 	if(transform.position.y <= 0)
 	{
 		Instantiate(explosion, transform.position, Quaternion.identity);
