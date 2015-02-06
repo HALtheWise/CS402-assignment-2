@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 var explosion:GameObject;
-var clip1:AudioClip;
+var audioClips : AudioClip[];
 var speed:float;
 function Start () {
 
@@ -11,7 +11,7 @@ function Update(){
 	transform.position.y -= speed * Time.deltaTime;
 	if(transform.position.y <= 0)
 	{
-		audio.PlayOneShot(clip1);
+		audio.PlayOneShot(audioClips[Random.Range(0,audioClips.length)]);
 		Instantiate(explosion, transform.position, Quaternion.identity);
 		Respawn();
 	}
