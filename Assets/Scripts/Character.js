@@ -26,3 +26,17 @@ function Update()
 	}
 	lastX = transform.position.x;
 }
+
+function OnCollisionEnter(col : Collision)
+{
+	if(col.gameObject.tag == "bomb")
+	{
+		// Hit by a bomb!
+	}
+	else if (col.gameObject.tag == "stein")
+	{
+		animation.Play("catch");
+	}
+	col.gameObject.transform.position.y = 50;
+	col.gameObject.transform.position.x = Random.Range(0,60);
+}
