@@ -3,6 +3,7 @@
 var lastX:float;
 var isMoving:boolean = false;
 var explosion:GameObject;
+var explosionSound:AudioClip;
 
 function Start()
 {
@@ -36,6 +37,7 @@ function OnCollisionEnter(col : Collision)
 {
 	if(col.gameObject.tag == "bomb")
 	{
+		audio.PlayOneShot(explosionSound);
 		Instantiate(explosion, col.gameObject.transform.position, Quaternion.identity);
 	}
 	else if (col.gameObject.tag == "stein")
