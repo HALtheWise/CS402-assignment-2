@@ -16,12 +16,16 @@ function Update()
 		
 		if (!isMoving){
 			isMoving = true;
-			animation.Play("step");
+			if (!if(!animation.IsPlaying("catch")){
+				animation.Play("step");
+			}
 		}
 	}else{
 		if (isMoving){
 			isMoving = false;
-			animation.Play("idle");
+			if (!if(!animation.IsPlaying("catch")){
+				animation.Play("idle");
+			}
 		}		
 	}
 	lastX = transform.position.x;
