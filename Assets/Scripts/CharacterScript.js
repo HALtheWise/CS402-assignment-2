@@ -71,6 +71,7 @@ var mug:GameObject;
 function Die(){
 	bomb.transform.position.y = 100000;
 	mug.transform.position.y = 100000;
+	Application.ExternalCall("ga", 'send', 'event', 'event', 'win', 'Denison Dropper', catchCounter);
 }
 
 function updateDisplays(){
